@@ -18,6 +18,16 @@ namespace gitGyakorlas
             }
         }
 
+        static int F02(int[] tomb)
+        {
+            int count = 0;
+
+            for (int i = 0; i <= tomb.Length; i++)
+            {
+                if (tomb[i] % 2 == 0) { count++; }
+            }
+            return count;
+        }
 
     }
 }
