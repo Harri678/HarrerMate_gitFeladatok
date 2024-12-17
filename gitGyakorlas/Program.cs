@@ -60,6 +60,21 @@ namespace gitGyakorlas
             return paratlanok;
         }
 
+        static void F05(int[] tomb)
+        {
+            Console.WriteLine($"Ennyi db pozitív szám van a tömbben: {F02(tomb)}");
+            Console.WriteLine($"A tömb elemeinek átlaga: {F03(tomb)}");
+
+            Console.Write("A tömbből alkotott páratlan számok: ");
+            int[] paratlan = F04(tomb);
+            foreach (int num in paratlan)
+            {
+                Console.Write($"{num}, ");
+            }
+            Console.WriteLine();
+
+        }
+
 
 
     }
