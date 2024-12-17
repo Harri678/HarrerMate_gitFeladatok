@@ -42,6 +42,24 @@ namespace gitGyakorlas
             return atlag;
         }
 
+        static int[] F04(int[] tomb)
+        {
+            int[] paratlanok = new int[10];
+
+            for (int i = 0; i < tomb.Length; i++) 
+            {
+                if (tomb[i] % 2 == 0)
+                {
+                    paratlanok[i] = tomb[i] + 1;
+                }
+                else
+                {
+                    paratlanok[i] = tomb[i];
+                }
+            }
+            return paratlanok;
+        }
+
 
 
     }
